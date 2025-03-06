@@ -1,0 +1,13 @@
+<div class="help-container">
+  <div class="user-list">
+    <div class="user-card" *ngFor="let user of users">
+      <h3>{{ user.name }} ({{ user.username }})</h3>
+      <p>Email: {{ user.email }}</p>
+      <p>Phone: {{ user.phone }}</p>
+      <p>Website: {{ user.website }}</p>
+      <p>Address: {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}</p>
+      <p>Geo: Lat: {{ user.address.geo.lat }}, Lng: {{ user.address.geo.lng }}</p>
+      <p>Company: {{ user.company.name }}, {{ user.company.catchPhrase }}, {{ user.company.bs }}</p>
+    </div>
+  </div>
+</div>

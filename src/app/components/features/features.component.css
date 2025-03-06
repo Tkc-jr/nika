@@ -1,0 +1,66 @@
+.features {
+    padding: 150px 0;
+
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+}
+
+.features-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.features-image img {
+
+    max-width: auto;
+
+}
+
+
+.features-text {
+    max-width: 45%;
+
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #0b132a;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #4f5665;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #4f5665;
+}
+
+.features-list li::before {
+    /* content: url('assets/check-icon.png'); */
+    position: absolute;
+    left: 0;
+    top: 5px;
+}

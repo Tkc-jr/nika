@@ -1,0 +1,96 @@
+.reviews-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.reviews-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.reviews-header p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.review-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.review-user-info h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.review-rating span {
+  margin-right: 5px;
+}
+
+.star {
+  color: gold;
+}
+
+.review-text p {
+  font-size: 1em;
+  color: #555;
+}
+
+.subscribe-section {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.subscribe-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.subscribe-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}

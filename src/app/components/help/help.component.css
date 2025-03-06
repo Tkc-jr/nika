@@ -1,0 +1,24 @@
+.help-container {
+  padding: 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-card {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+.user-card h3 {
+  margin-bottom: 5px;
+}
+
+.user-card p {
+  margin: 0;
+}

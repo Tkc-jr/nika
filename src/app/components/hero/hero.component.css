@@ -1,0 +1,88 @@
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #f0f0f0;
+}
+
+.header-content {
+  flex: 1;
+  text-align: left;
+}
+
+.header-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.header-content p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.get-started-button {
+  background-color: #F53838;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(245, 56, 56, 0.3);
+}
+
+.header-image {
+  flex: 1;
+  text-align: center;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-stats {
+  background-color: white;
+  padding: 30px 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-icon img {
+  width: 50px;
+  height: 50px;
+  background-color: #f9f0f0;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.stat-value span {
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+.stat-value p {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 5px;
+}

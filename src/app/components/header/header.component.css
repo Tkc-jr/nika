@@ -1,67 +1,150 @@
+/* Header სტილი */
 header {
-    padding: 30px 0;
-    background-color: #fff;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-
+/* კონტეინერი */
 .container {
-    max-width: 1320px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    height: 35px;
+/* ლოგო კონტეინერი */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ლოგოს და ტექსტის შორის დაშორება */
+    text-decoration: none; /* ქვედა ხაზის მოცილება */
+}
 
+/* ლოგოს ზომა */
+.logo {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+/* ტექსტის სტილი */
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+/* ჰოვერის ეფექტი */
+.logo-container:hover .logo-text {
+    color: #f53838;
+}
+
+
+/* ნავიგაცია */
+nav {
+    display: flex;
+    gap: 25px;
 }
 
 nav a {
-    margin-left: 30px;
     text-decoration: none;
-    color: #4f5665;
+    color: #333;
     font-size: 16px;
     font-weight: 500;
+    position: relative;
     transition: color 0.3s ease;
+}
+
+/* აქტიური და ჰოვერ ეფექტები */
+nav a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #f53838;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 nav a:hover,
 nav a.active {
-    font-weight: 700;
     color: #f53838;
 }
 
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+/* ღილაკების სტილი */
 .header-buttons {
     display: flex;
+    gap: 15px;
 }
 
 .header-buttons button {
-    padding: 13px 45px;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-    margin-left: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
+/* შესვლის ღილაკი */
 .signin-btn {
     background-color: transparent;
-    color: #4f5665;
+    color: #333;
+    border: 2px solid #f53838;
 }
 
 .signin-btn:hover {
-    color: #f53838;
-}
-
-.signup-btn {
     background-color: #f53838;
     color: white;
 }
 
+/* რეგისტრაციის ღილაკი */
+.signup-btn {
+    background: linear-gradient(135deg, #f53838, #d32f2f);
+    color: white;
+    border: none;
+}
+
 .signup-btn:hover {
-    background-color: #d32f2f;
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
+}
+
+/* რეზპონსიული დიზაინი */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .header-buttons {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .header-buttons button {
+        width: 100%;
+    }
 }

@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'pricing', component: PricingComponent },
   { path: 'testimonials', component: TestimonialsComponent },
   { path: 'map', component: MapComponent },
-  { path: '' , component: MapComponent },
+  { path: '' , component:  HeroComponent },
   { path: 'about', component: AboutComponent },
   { path: 'help', component: HelpComponent },
 ];

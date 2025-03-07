@@ -4,10 +4,21 @@
       <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
       <button class="get-started-button">Get Started</button>
     </div>
+    
     <div class="header-image">
       <img src="/images/hero.svg" alt="Header Image">
     </div>
   </div>
+  <form [formGroup]="calculatorForm" (ngSubmit)="calculate()">
+    <input type="text" formControlName="from" placeholder="From">
+    <input type="text" formControlName="to" placeholder="To">
+    <input type="text" formControlName="container" placeholder="Container">
+    <input type="text" formControlName="start" placeholder="Start">
+    <input type="text" formControlName="weight" placeholder="Weight">
+    <input type="text" formControlName="seaLine" placeholder="Sea Line">
+  
+    <button type="submit" [disabled]="calculatorForm.invalid" [ngClass]="{'valid': calculatorForm.valid}">გამოთვლა</button>
+  </form>
   <div class="header-stats">
     <div class="stats-container">
       <div class="stat-card">
@@ -39,3 +50,7 @@
       </div>
     </div>
   </div>
+
+
+
+ 

@@ -86,3 +86,9 @@
   color: #555;
   margin-top: 5px;
 }
+
+
+button.valid {
+  background-color: blue;
+  color: white;
+}

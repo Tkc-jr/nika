@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2'; // იმპორტირება
 
 @Component({
   selector: 'app-hero',
@@ -27,5 +28,12 @@ export class HeroComponent implements OnInit {
   calculate() {
     // აქ უნდა ჩაწეროთ გამოთვლის ლოგიკა
     // ...
+
+    // SweetAlert2-ის მოდალური ფანჯრის ჩვენება
+    Swal.fire({
+      title: 'მონაცემები წარმატებით გაიგზავნა!',
+      icon: 'success', // წარმატების ხატულა
+      confirmButtonText: 'კარგი' // ღილაკის ტექსტი
+    });
   }
 }

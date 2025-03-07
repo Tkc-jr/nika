@@ -87,8 +87,55 @@
   margin-top: 5px;
 }
 
-
-button.valid {
-  background-color: blue;
-  color: white;
+form {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8; /* ან ოდნავ ღია ნაცრისფერი */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* მსუბუქი ჩრდილი */
 }
+
+input {
+  flex: 1; /* თანაბრად გადანაწილება */
+  padding: 10px 15px;
+  margin: 0 5px; /* მცირე დაშორება ინპუტებს შორის */
+  border: 1px solid #e0e0e0; /* მსუბუქი საზღვარი */
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  transition: border-color 0.3s ease; /* საზღვრის ანიმაცია ფოკუსის დროს */
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff; /* ფოკუსის დროს საზღვრის ფერი */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0; /* ნაცრისფერი ფონი გამორთული მდგომარეობისთვის */
+  color: #666;
+  font-size: 14px;
+  cursor: not-allowed; /* კურსორი გამორთული მდგომარეობისთვის */
+  transition: background-color 0.3s ease, color 0.3s ease; /* ანიმაცია ფონის და ფერის ცვლილებისთვის */
+  margin-left: 10px;
+}
+
+button[type="submit"]:not(:disabled) {
+  background-color: #007bff; /* ლურჯი ფონი ჩართული მდგომარეობისთვის */
+  color: white;
+  cursor: pointer; /* კურსორი ჩართული მდგომარეობისთვის */
+}
+
+/* საჭიროების შემთხვევაში დაამატეთ ხატულები ინპუტების წინ */
+/* მაგალითად: */
+/* input[formControlName="from"] { */
+/* background-image: url('location-icon.png'); */
+/* background-repeat: no-repeat; */
+/* background-position: 10px center; */
+/* padding-left: 35px; */
+/* } */
